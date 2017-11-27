@@ -11,3 +11,5 @@ You must manually install all plugins that this config uses. Look for all entrie
     'plugin:import/warnings'
   ],
 ```
+
+This is required because of a [limitation in ESLint configs](https://github.com/eslint/eslint/issues/3458).
