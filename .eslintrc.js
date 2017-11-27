@@ -225,6 +225,7 @@ module.exports = {
     'operator-assignment': 'warn',
     'operator-linebreak': ['warn', 'after'],
     'prefer-arrow-callback': 'warn',
+    'prefer-const': 'warn',
     'prefer-numeric-literals': 'warn',
     'prefer-rest-params': 'warn',
     'prefer-spread': 'warn',
