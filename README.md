@@ -20,5 +20,5 @@ You must reference this config from your ESLint config file:
 
 ```yml
 extends:
-  - appeals
+  - @department-of-veterans-affairs/eslint-config-appeals
 ```
