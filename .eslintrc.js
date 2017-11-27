@@ -99,7 +99,7 @@ module.exports = {
     'react/jsx-uses-vars': 'warn',
     // We have so many places where we have missing PropTypes that it's not worth it to fix this now.
     'react/prop-types': 0,
-    // This rule is largely to prevent syntax errors that feel fairly easy to catch, 
+    // This rule is largely to prevent syntax errors that feel fairly easy to catch,
     // and it makes our code less readable.
     'react/no-unescaped-entities': 0,
     'react/no-typos': 1,
