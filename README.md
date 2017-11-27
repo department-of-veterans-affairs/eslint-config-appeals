@@ -1,2 +1,2 @@
 # eslint-config-appeals
-ESLint config for Appeals JS
+ESLint config for Appeals JS.
