@@ -1,6 +1,7 @@
 {
   "name": "@department-of-veterans-affairs/eslint-config-appeals",
   "version": "1.0.2",
+  "private": true,
   "description": "ESLint config for Appeals JS.",
   "main": ".eslintrc.js",
   "repository": "https://github.com/department-of-veterans-affairs/eslint-config-appeals.git",
