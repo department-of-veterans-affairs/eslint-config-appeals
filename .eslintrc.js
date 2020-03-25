@@ -13,10 +13,7 @@ module.exports = {
   settings: {
     'import/resolver': {
       node: {
-        extensions: [
-          '.js',
-          '.jsx'
-        ]
+        extensions: ['.js', '.jsx']
       }
     }
   },
@@ -27,11 +24,7 @@ module.exports = {
     },
     sourceType: 'module'
   },
-  plugins: [
-    'react',
-    'import',
-    'mocha'
-  ],
+  plugins: ['react', 'import', 'mocha'],
   rules: {
     'accessor-pairs': 'warn',
     'array-bracket-spacing': 'warn',
@@ -41,21 +34,24 @@ module.exports = {
     'block-spacing': 'warn',
     'brace-style': 'warn',
     camelcase: ['warn', { properties: 'never' }],
-    'class-methods-use-this': ['warn', {
-      exceptMethods: [
-        'render',
-        'getInitialState',
-        'getDefaultProps',
-        'getChildContext',
-        'componentWillMount',
-        'componentDidMount',
-        'componentWillReceiveProps',
-        'shouldComponentUpdate',
-        'componentWillUpdate',
-        'componentDidUpdate',
-        'componentWillUnmount'
-      ]
-    }],
+    'class-methods-use-this': [
+      'warn',
+      {
+        exceptMethods: [
+          'render',
+          'getInitialState',
+          'getDefaultProps',
+          'getChildContext',
+          'componentWillMount',
+          'componentDidMount',
+          'componentWillReceiveProps',
+          'shouldComponentUpdate',
+          'componentWillUpdate',
+          'componentDidUpdate',
+          'componentWillUnmount'
+        ]
+      }
+    ],
     'comma-dangle': 'warn',
     'comma-spacing': 'warn',
     'comma-style': 'warn',
@@ -100,10 +96,13 @@ module.exports = {
     // and it makes our code less readable.
     'react/no-unescaped-entities': 0,
     'react/no-typos': 1,
-    'react/self-closing-comp': [1, {
-      component: true,
-      html: false
-    }],
+    'react/self-closing-comp': [
+      1,
+      {
+        component: true,
+        html: false
+      }
+    ],
     'jsx-quotes': 'warn',
     'key-spacing': 'warn',
     'keyword-spacing': 'warn',
@@ -133,7 +132,6 @@ module.exports = {
     'mocha/no-exclusive-tests': 'warn',
     'new-cap': 'warn',
     'new-parens': 'warn',
-    'newline-after-var': 'warn',
     'newline-before-return': 'warn',
     'newline-per-chained-call': 'warn',
     'no-alert': 'warn',
@@ -212,15 +210,21 @@ module.exports = {
     'no-void': 'warn',
     'no-whitespace-before-property': 'warn',
     'no-with': 'error',
-    'object-curly-spacing': [
-      'warn',
-      'always'
-    ],
-    'object-property-newline': 'warn',
+    'object-curly-spacing': ['warn', 'always'],
+    'object-property-newline': ['warn', { allowAllPropertiesOnSameLine: true }],
     'object-shorthand': 'warn',
     'one-var-declaration-per-line': 'warn',
     'operator-assignment': 'warn',
     'operator-linebreak': ['warn', 'after'],
+    'padding-line-between-statements': [
+      'warn',
+      { blankLine: 'always', prev: ['const', 'let', 'var'], next: '*' },
+      {
+        blankLine: 'any',
+        prev: ['const', 'let', 'var'],
+        next: ['const', 'let', 'var']
+      }
+    ],
     'prefer-arrow-callback': 'warn',
     'prefer-const': 'warn',
     'prefer-numeric-literals': 'warn',
@@ -236,23 +240,14 @@ module.exports = {
     'sort-imports': 'off',
     'sort-vars': 'warn',
     'space-before-blocks': 'warn',
-    'space-in-parens': [
-      'warn',
-      'never'
-    ],
+    'space-in-parens': ['warn', 'never'],
     'space-infix-ops': 'warn',
     'space-unary-ops': 'warn',
-    'spaced-comment': [
-      'warn',
-      'always'
-    ],
+    'spaced-comment': ['warn', 'always'],
     strict: 'error',
     'symbol-description': 'warn',
     'template-curly-spacing': 'warn',
-    'unicode-bom': [
-      'warn',
-      'never'
-    ],
+    'unicode-bom': ['warn', 'never'],
     'wrap-regex': 'warn',
     'yield-star-spacing': 'warn',
     yoda: 'warn'
